@@ -1,0 +1,248 @@
+{% extends 'dashboard/index.html' %}
+{% load static %}
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+
+
+ 
+
+ {% block market_chart %}    
+ <div class="container-fluid" style="margin-top: 8em;">
+               
+  <div class="row">
+
+      <div class="col-12">
+
+          <div class="crypto-ticker m-b-15">
+              {% if deserialized %}
+               <ul id="webticker-dark-icons">
+                 {%  for token in deserialized %}
+                   
+<li data-update="item1"  class="p-2"  style="background: #232345;color:white;"   ><i class="cc {{token.symbol}} "></i> {{token.symbol}} <span class="coin-value"> <b>${{token.quote.USD.price|floatformat:"2"}}</b></span></li>
+               {% endfor %}
+              </ul>
+                 {% endif %}
+           </div>
+      </div>
+  </div>
+
+</div>
+
+
+
+
+ <div class="container px-4 ">
+  <div class="row gx-5">
+
+    <div class="col-md-3">
+      <div class="p-3 mb-2  fs-6 rounded shadow-lg"  style="background: #232345;color:white;"><i class="fa-solid fa-arrow-down-9-1"></i> Pending Deposit: <b class="float-end">{{pending}}</b></div>
+  </div>
+    <div class="col-md-3"> 
+        <div class="p-3 mb-2 fs-6 rounded shadow-lg" style="background: #232345;color:white;"><i class="fa-solid fa-wallet"></i> Wallet Balance: <b class="float-end"> {{balance}}</b></div>
+        </div>
+    <div class="col-md-3"> 
+        <div class="p-3 mb-2 fs-6 rounded shadow-lg" style="background: #232345;color:white;"><i class="fa-solid fa-percent"></i> Profit: <b class="float-end">{{profit}} </b></div>
+        </div>
+        <div class="col-md-3">
+        <div class="p-3 mb-2  fs-6 rounded shadow-lg"  style="background: #232345;color:white;"><i class="fa-solid fa-wallet"></i> Total Balance:  <b class="float-end">{{total}}</b></div>
+        </div>
+      
+</div>
+
+
+ {% if not pending  %} 
+
+
+ <div class="row ">
+  <div class="col d-flex justify-content-center">
+
+  <div class="card  shadow-lg p-3 mb-5 bg-body rounded w-70 ">
+<div class="card-body">
+  <h4 class="card-title site" style="color: #f5a742;">Deposit | Invest</h4><hr>
+
+ 
+
+ <form method="post" class="form-group" id="form-deposit">
+  {% csrf_token %}
+ {% bootstrap_form form %}
+  {% buttons %}
+  <div class="d-grid gap-2">
+      <button type="submit" class="btn btn-outline-success" style="background:#232345;color: white;">
+      Deposit
+          </button>
+        </div>
+  {% endbuttons %}
+
+
+
+
+  </form>
+ 
+</div>
+</div>
+</div>
+</div>
+
+{% else %}
+
+
+<div class="row">
+  {% for obj in wallet %}
+<h5><img src="{{obj.logo.url}}" style="height: 5vh;" alt="">&nbsp; {{obj.token}}</h5> 
+<h5 class="text-center"  style="color: #f5a742;"> Main Account</h5>
+<h5 class="text-center">{{obj.token}} wallet address ({{obj.token}})</h5>
+<div class="col d-flex justify-content-center">
+
+
+
+<div class="card">
+<figure class="figure">
+  <img src="{{obj.qr_code.url}}" class="figure-img img-fluid rounded" alt="...">
+  <figcaption class="figure-caption fs-6 text-white notice fw-bold p-1" id="address_field">{{obj.wallet_address}}</figcaption>
+</figure>
+<div class="card-body">
+  <div class="text-center mb-3">
+    <button class="btn btn-outline-success me-2" id="copy"  onclick="myFunction()">Copy address <i class="fa-regular fa-copy"></i> </button> 
+    
+  </div>
+  <div class="text-center mb-2">
+    
+  <button class="btn btn-outline-success">Save QR Code <i class="fa-solid fa-arrow-down"></i></button>
+  </div>
+
+  <div class="card-header fw-bolder fs-5">
+    Notice:
+  </div>
+  <ul class="notice">
+    
+    <li class="notice fs-6 lh-lg"><i class="fa-solid fa-star-of-life"></i> The address is not allowed to deposit other assets other than {{obj.token}}, and any other asset deposit will not be recovered.</li>
+    <li class="notice fs-6 lh-lg"><i class="fa-solid fa-star-of-life"></i> The deposit transaction will be automatic,and the {{obj.token}} transfer wiil need to be confirmed by th entire {{obj.token}}  network. After 2 confirmations, your BTC will be automatically deposited to your account.</li>
+    
+  </ul>
+</div>
+
+ 
+ 
+</div>
+
+
+
+{% endfor %}
+
+
+
+
+</div>
+
+
+
+
+  </div>
+</div>
+
+
+{% endif %}
+
+
+
+
+
+
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ {% block trade_history %}
+
+
+{% if get_obj %}
+
+
+{%  include 'dashboard/history.html' with props=get_obj   %}
+
+{% endif %}
+
+{% endblock %}
+
+
+  {% block sell_order %}
+
+
+  {% endblock %}
+
+
+
+
+                <!-- End PAge Content -->
+            </div>
+            <!-- End Container fluid  -->
+            <!-- footer -->
+            <footer> © 2022 ACMETradingBot All Right Reserved.</footer>
+            <!-- End footer -->
+        </div>
+        <!-- End Page wrapper  -->
+    </div>
+    <!-- End Wrapper -->
+    <!-- All Jquery -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+
+    <script src='{% static "dashboard/js/lib/jquery/jquery.min.js" %}'></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src='{% static "dashboard/js/lib/bootstrap/js/popper.min.js" %}' ></script>
+
+    <script src='{% static "dashboard/js/lib/bootstrap/js/bootstrap.min.js" %}'></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src='{% static "dashboard/js/jquery.slimscroll.js"  %}'></script>
+    <!--Menu sidebar -->
+    <script src='{% static "dashboard/js/sidebarmenu.js" %}'></script>
+    <!--stickey kit -->
+    <script src='{% static "dashboard/js/lib/sticky-kit-master/dist/sticky-kit.min.js"  %}'></script>
+    <!--Custom JavaScript -->
+    <script src='{% static "dashboard/js/lib/webticker/jquery.webticker.min.js" %}'></script>
+    <script src='{% static "dashboard/js/lib/peitychart/jquery.peity.min.js" %}'></script>
+    <!-- scripit init-->
+    <script src='{% static "dashboard/js/custom.min.js" %}'></script>
+    <script src='{% static "dashboard/js/dashboard-1.js" %}'></script>
+  
+    <script
+    src="https://code.jquery.com/jquery-3.1.1.min.js"
+    integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+    crossorigin="anonymous"></script>
+  <script src="semantic/dist/semantic.min.js"></script>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+if ( window.history.replaceState ) {
+  window.history.replaceState( null, null, window.location.href );
+}
+</script>
+</body>
+
+</html>

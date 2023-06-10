@@ -1,0 +1,371 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-23 13:14+0100\n"
+"PO-Revision-Date: 2022-04-23 13:40+0000\n"
+"Last-Translator: ifeanyi anaga <iifeanyi570@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.9.8\n"
+
+#: .\contact\templates\contact\contact.html:75
+msgid "Contact"
+msgstr "Contacto"
+
+#: .\contact\templates\contact\contact.html:79 .\mywebsite\views.py:28
+#: .\templates\homepage.html:320 .\templates\homepage.html:1400
+msgid "Home"
+msgstr ""
+
+#: .\contact\templates\contact\contact.html:86 .\templates\homepage.html:352
+msgid "Contact Us"
+msgstr "Contáctenos"
+
+#: .\contact\templates\contact\contact.html:131
+msgid "Send"
+msgstr "Enviar"
+
+#: .\contact\templates\contact\contact.html:139
+msgid "Read the terms"
+msgstr "Lea los términos"
+
+#: .\contact\templates\contact\contact.html:179
+msgid "Received!"
+msgstr "¡Recibió!"
+
+#: .\contact\templates\contact\contact.html:187
+msgid "Message successfully sent"
+msgstr "mensaje enviado con exito"
+
+#: .\contact\templates\contact\contact.html:190
+#: .\contact\templates\contact\contact.html:213
+msgid "Close"
+msgstr "Cerrar"
+
+#: .\contact\templates\contact\contact.html:202
+msgid "Our policy"
+msgstr "Nuestra política"
+
+#: .\contact\templates\contact\contact.html:206
+msgid ""
+"\n"
+"          Your access to and use of the Services is further subject to the Vistaprint Privacy Policy which is available on Vistaprint’s website and is incorporated by reference herein.\n"
+"\n"
+"          YOU UNDERSTAND THAT BY AGREEING TO THIS AGREEMENT AND/OR BY USING THE SERVICES, YOU ARE AGREEING TO BE BOUND BY THIS AGREEMENT THAT BINDS YOU IN THE SAME WAY THAT A PAPER CONTRACT BINDS YOU. THIS AGREEMENT LIMITS VISTAPRINT LIABILITY AND OBLIGATIONS TO YOU TO THE TERMS SET FORTH HEREIN AND PERMITS VISTAPRINT TO CHANGE, SUSPEND, OR TERMINATE YOUR ACCESS TO AND USE OF THE SERVICES. YOU MUST ACCEPT, WITHOUT MODIFICATION, ALL OF THE TERMS, CONDITIONS, POLICIES AND INSTRUCTIONS REFERENCED IN THIS AGREEMENT IN ORDER TO ACCESS AND USE THE SERVICES. IF YOU DO NOT ACCEPT THIS AGREEMENT IN ITS ENTIRETY, YOU MAY NOT ACCESS OR USE THE SERVICES.\n"
+"       "
+msgstr ""
+"\n"
+"Su acceso y uso de los Servicios está sujeto además a la Política de privacidad de Vistaprint, que está disponible en el sitio web de Vistaprint y se incorpora aquí como referencia.\n"
+"\n"
+"USTED ENTIENDE QUE AL ACEPTAR ESTE ACUERDO Y/O AL UTILIZAR LOS SERVICIOS, ACEPTA ESTAR OBLIGADO POR ESTE ACUERDO QUE LO OBLIGA DE LA MISMA MANERA QUE LO OBLIGA UN CONTRATO EN PAPEL. ESTE ACUERDO LIMITA LA RESPONSABILIDAD Y LAS OBLIGACIONES DE VISTAPRINT HACIA USTED A LOS TÉRMINOS ESTABLECIDOS EN EL PRESENTE DOCUMENTO Y PERMITE A VISTAPRINT CAMBIAR, SUSPENDER O TERMINAR SU ACCESO Y USO DE LOS SERVICIOS. DEBE ACEPTAR, SIN MODIFICACIONES, TODOS LOS TÉRMINOS, CONDICIONES, POLÍTICAS E INSTRUCCIONES A LAS QUE SE REFIERE ESTE ACUERDO PARA ACCEDER Y UTILIZAR LOS SERVICIOS. SI NO ACEPTA ESTE ACUERDO EN SU TOTALIDAD, NO PODRÁ ACCEDER NI UTILIZAR LOS SERVICIOS."
+
+#: .\contact\views.py:18 .\contact\views.py:45
+msgid "contact us"
+msgstr "contacto"
+
+#: .\mywebsite\settings.py:283
+msgid "German"
+msgstr "Alemán"
+
+#: .\mywebsite\settings.py:284
+msgid "French"
+msgstr "Francés"
+
+#: .\mywebsite\settings.py:285
+msgid "English"
+msgstr "inglés"
+
+#: .\mywebsite\settings.py:286
+msgid "Spanish"
+msgstr "español"
+
+#: .\mywebsite\urls.py:22
+msgid "admin/"
+msgstr "administración/"
+
+#: .\mywebsite\views.py:52
+msgid "home"
+msgstr ""
+
+#: .\templates\homepage.html:323
+msgid "Testimonies"
+msgstr "Testimonios"
+
+#: .\templates\homepage.html:331
+msgid "Select Language"
+msgstr "Seleccione el idioma"
+
+#: .\templates\homepage.html:344
+msgid "Payment Proof"
+msgstr "Prueba de pago"
+
+#: .\templates\homepage.html:348
+msgid "Support"
+msgstr "Apoyo"
+
+#: .\templates\homepage.html:357 .\templates\homepage.html:394
+#: .\templates\homepage.html:414 .\templates\homepage.html:436
+msgid "Dashboard"
+msgstr "Panel"
+
+#: .\templates\homepage.html:358 .\templates\homepage.html:395
+#: .\templates\homepage.html:415 .\templates\homepage.html:437
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: .\templates\homepage.html:360 .\templates\homepage.html:397
+#: .\templates\homepage.html:417 .\templates\homepage.html:439
+msgid "Login"
+msgstr "Acceso"
+
+#: .\templates\homepage.html:361 .\templates\homepage.html:418
+#: .\templates\homepage.html:440
+msgid "Sign Up"
+msgstr "Inscribirse"
+
+#: .\templates\homepage.html:383
+msgid "Your Revolutionary"
+msgstr "tu revolucionario"
+
+#: .\templates\homepage.html:383
+msgid "Bitcoin Investment"
+msgstr "Inversión Bitcoin"
+
+#: .\templates\homepage.html:385
+msgid ""
+"\n"
+"          We offer three reliable investment plans.\n"
+"          Also you can earn more profit by refering your friend, and family.\n"
+"          No investment required, can get up to "
+msgstr ""
+"\n"
+"Ofrecemos tres planes de inversión confiables.\n"
+"También puede obtener más ganancias al recomendar a su amigo y familia.\n"
+"No requiere inversión, puede llegar hasta"
+
+#: .\templates\homepage.html:388
+msgid ""
+"ref comissions.what are you waiting for ? create a free account and start refering the world.\n"
+"          "
+msgstr ""
+"comisiones de ref. ¿qué estás esperando? crea una cuenta gratis y comienza a"
+" recomendar al mundo."
+
+#: .\templates\homepage.html:398
+msgid " Sign Up"
+msgstr "Inscribirse"
+
+#: .\templates\homepage.html:406
+msgid "Your Revolutionary <br>Bitcoin Investment"
+msgstr "Su inversión revolucionaria en Bitcoin"
+
+#: .\templates\homepage.html:407
+msgid ""
+"acmetradingbot is a private investment company incorporated in the UK.\n"
+"          Our team consists of professionals at all levels of the blockchain.\n"
+"          The main business involves cryptocurrency mining and intelligent automated trading,\n"
+"          bringing stable and efficient revenue to our global customers,\n"
+"          acmetradingbot's company registration number 06690835..\" "
+msgstr ""
+"acmetradingbot es una empresa de inversión privada constituida en el Reino Unido.\n"
+"Nuestro equipo está formado por profesionales en todos los niveles de la cadena de bloques.\n"
+"El negocio principal implica la minería de criptomonedas y el comercio automatizado inteligente,\n"
+"traer ingresos estables y eficientes a nuestros clientes globales,\n"
+"número de registro de la empresa acmetradingbot 06690835..\""
+
+#: .\templates\homepage.html:427
+msgid "Your Revolutionary <br>Bitcoin Investment "
+msgstr "Su inversión revolucionaria en Bitcoin"
+
+#: .\templates\homepage.html:428
+msgid ""
+"Welcome to acmetradingbot.com\n"
+"          acmetradingbot.com is a online investment platform,We're a legally company registered in the United Kingdom\n"
+"          We are experienced team with high qualification and efficiency,\n"
+"          provided for an investment service focus on the Bitcoin trading market\n"
+"          acmetradingbot.com helps you earn stable and fast profit online\n"
+"          Don't delay! Join acmetradingbot Now!\" "
+msgstr ""
+"Bienvenido a acmetradingbot.com\n"
+"acmetradingbot.com es una plataforma de inversión en línea, somos una empresa registrada legalmente en el Reino Unido\n"
+"Somos un equipo experimentado con alta calificación y eficiencia,\n"
+"proporcionado para un servicio de inversión centrado en el mercado de comercio de Bitcoin\n"
+"acmetradingbot.com lo ayuda a obtener ganancias estables y rápidas en línea\n"
+"¡No se demore! ¡Únete a acmetradingbot ahora!\""
+
+#: .\templates\homepage.html:517
+msgid "investment plan "
+msgstr "investment plan"
+
+#: .\templates\homepage.html:538
+msgid "Min-Deposit:"
+msgstr "Depósito mínimo:"
+
+#: .\templates\homepage.html:539
+msgid "Max-Deposit:"
+msgstr "Depósito máximo:"
+
+#: .\templates\homepage.html:540
+msgid "Ref-Commission:"
+msgstr "Ref-Comisión:"
+
+#: .\templates\homepage.html:541
+msgid "Instant Payment:"
+msgstr "Pago instantáneo:"
+
+#: .\templates\homepage.html:542
+msgid "Withdrawal Period:"
+msgstr "Tiempo de espera:"
+
+#: .\templates\homepage.html:548
+msgid "Account"
+msgstr ""
+
+#: .\templates\homepage.html:593
+msgid "percentage"
+msgstr ""
+
+#: .\templates\homepage.html:595
+msgid "Total percentage MIN"
+msgstr ""
+
+#: .\templates\homepage.html:599
+msgid " earnings"
+msgstr ""
+
+#: .\templates\homepage.html:612
+msgid "Choose a Plan"
+msgstr ""
+
+#: .\templates\homepage.html:613
+msgid "24Hours"
+msgstr ""
+
+#: .\templates\homepage.html:614
+msgid "48Hours"
+msgstr ""
+
+#: .\templates\homepage.html:615
+msgid "72Hours"
+msgstr ""
+
+#: .\templates\homepage.html:616
+msgid "120Hours"
+msgstr ""
+
+#: .\templates\homepage.html:654
+msgid "Our Investment"
+msgstr ""
+
+#: .\templates\homepage.html:657
+msgid "Statistics"
+msgstr ""
+
+#: .\templates\homepage.html:671
+msgid "Running Days"
+msgstr ""
+
+#: .\templates\homepage.html:687
+msgid "Total Deposits"
+msgstr ""
+
+#: .\templates\homepage.html:703
+msgid "Total Withdrawals"
+msgstr ""
+
+#: .\templates\homepage.html:718
+msgid "Total Accounts"
+msgstr ""
+
+#: .\templates\homepage.html:876
+msgid "Latest Deposits"
+msgstr ""
+
+#: .\templates\homepage.html:1053
+msgid "Latest Withdrawals"
+msgstr ""
+
+#: .\templates\homepage.html:1242
+msgid "Our advantages"
+msgstr ""
+
+#: .\templates\homepage.html:1261
+msgid "customer feedback"
+msgstr ""
+
+#: .\templates\homepage.html:1264
+msgid "WHAT OUR CLIENT SAYS"
+msgstr ""
+
+#: .\templates\homepage.html:1312
+msgid "Top Investors"
+msgstr ""
+
+#: .\templates\homepage.html:1319 .\templates\homepage.html:1340
+#: .\templates\homepage.html:1359 .\templates\homepage.html:1377
+msgid "More Info"
+msgstr ""
+
+#: .\templates\homepage.html:1334
+msgid "Last Investor"
+msgstr ""
+
+#: .\templates\homepage.html:1353
+msgid "Investors' stats"
+msgstr ""
+
+#: .\templates\homepage.html:1370
+msgid "Last Withdrawal"
+msgstr ""
+
+#: .\templates\homepage.html:1393
+msgid ""
+"  The Company\n"
+"ACMETRADINGBOT is a private investment company incorporated in Northern Ireland.The main business involves cryptocurrency mining and intelligent automated trading, bringing stable and efficient revenue to our global customers.\n"
+"     "
+msgstr ""
+
+#: .\templates\homepage.html:1398
+msgid "Quick Links"
+msgstr ""
+
+#: .\templates\homepage.html:1401
+msgid "About"
+msgstr ""
+
+#: .\templates\homepage.html:1440
+msgid ""
+"Phone Only For Vip\n"
+"\n"
+"          admin@acmetradingbot.com\n"
+"          \n"
+"          411 Oxford Street, Office 1.01,\n"
+"          \n"
+"          London, England,\n"
+"          \n"
+"          W1C 2PE\n"
+"        "
+msgstr ""
+
+#: .\templates\homepage.html:1483
+msgid "All rights reserved"
+msgstr ""
+
+#: .\templates\homepage.html:1485
+msgid "Terms & Conditions"
+msgstr ""
+
+#: .\templates\homepage.html:1485
+msgid "Privacy Policy"
+msgstr ""

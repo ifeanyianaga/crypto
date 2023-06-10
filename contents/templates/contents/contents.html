@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block carosuel %}
+
+{% endblock %}
+
+
+
+ {% block content %}
+ <div class="row">
+     <div class="col-md-8">
+ <div class="card">
+     <div class="card-body">
+        <h5 class="card-title">{{article.title|title}}</h5>
+        <img src={{article.images.url}} alt="" width="100%">
+        <p class="card-text mt-5">{{article.content}}</p>
+     </div>
+ </div>
+</div></div>
+
+  {% endblock %}
